@@ -23,7 +23,7 @@ body {
   margin-right: auto;
   */
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 .main-header {
@@ -48,7 +48,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
-  position: relative;
+  /* position: relative; */
 }
 
 aside {
@@ -227,6 +227,33 @@ button {
   */
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  color: #ff0000;
+}
+
+h2 {
+  /* background-color: #ffa500; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
 
 /* Resolving conflicts */
