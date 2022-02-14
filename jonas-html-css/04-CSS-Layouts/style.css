@@ -23,15 +23,10 @@ body {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -357,6 +352,7 @@ footer {
   font-style: italic;
 }
 
+/*
 .row {
   display: flex;
   align-items: flex-start;
@@ -365,10 +361,37 @@ footer {
 }
 
 article {
-  flex: 0 0 825px;
+  flex: 1;
   margin-bottom: 0;
 }
 
 aside {
   flex: 0 0 300px;
+}
+*/
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  column-gap: 75px;
+  row-gap: 60px;
+  grid-template-columns: 1fr 300px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+/*
+article {
+}
+
+aside {
+  align-self: start;
+}
+*/
+
+footer {
+  grid-column: 1 / -1;
 }
