@@ -33,6 +33,17 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 1rem = 16px as default */
+
+  /* 1rem = 10px after this */
+  /* font-size: 10px; */
+
+  /* Percentage of user's browser font-size setting */
+  /* 10px / 16px = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
