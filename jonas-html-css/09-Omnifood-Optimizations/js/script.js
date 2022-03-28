@@ -34,7 +34,7 @@ btnNavEl.addEventListener("click", function () {
 // Burada sayfadaki bütün linkleri seçiyoruz
 const allLinks = document.querySelectorAll("a:link");
 
-// Toplu seçimler için forEach kullanıyoruz. 
+// Toplu seçimler için forEach kullanıyoruz.
 // function (farkEtmez)
 // function (e) --> e = event
 
@@ -56,7 +56,7 @@ allLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
 
@@ -83,7 +83,8 @@ const obs = new IntersectionObserver(
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
     }
-  }, {
+  },
+  {
     // In the viewport
     root: null,
     threshold: 0,
