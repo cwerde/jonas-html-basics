@@ -83,8 +83,7 @@ const obs = new IntersectionObserver(
     if (ent.isIntersecting === true) {
       document.body.classList.remove("sticky");
     }
-  },
-  {
+  }, {
     // In the viewport
     root: null,
     threshold: 0,
